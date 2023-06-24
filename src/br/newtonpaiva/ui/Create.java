@@ -19,12 +19,14 @@ public class Create {
 
         em.getTransaction().begin();
 
+            //conta
         Produto p = new Produto();
         p.setNome("DOTA2");
 
         List<Produto> produtos = new ArrayList<>();
         produtos.add(p);
 
+            //pessoa
         Categoria c = new Categoria();
         c.setNome("Jogos");
         c.setProdutos(produtos);
